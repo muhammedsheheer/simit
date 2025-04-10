@@ -23,18 +23,18 @@ const Reserve: React.FC = () => {
           <h1 className="mt-4 text-center font-open_sans text-2xl font-[700] uppercase tracking-[4px] text-[#76101E] md:mt-20 md:text-4xl md:tracking-[7px]">
             RESERVE TABLE
           </h1>
-          <p className="font-poppins w-full max-w-[450px] px-2 text-center text-sm font-[300] uppercase text-[#373636] md:text-base">
+          <p className="w-full max-w-[450px] px-2 text-center font-poppins text-sm font-[300] uppercase text-[#373636] md:text-base">
             Marlo’s strives to serve high quality dishes whilst giving
             exceptional customer service. Our wide menu has been created to
             offer everyone something which they will love. From homemade British
             classics to infused Mediterranean dishes.
           </p>
-          <Button className="font-poppins rounded-none bg-[#76101E] px-4 py-6 text-center text-xs font-[400] uppercase tracking-[2px] text-[#fff] hover:bg-[#af1d30] md:mt-3 md:px-6 md:py-7 md:text-sm">
+          <Button className="rounded-none bg-[#76101E] px-4 py-6 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#fff] hover:bg-[#af1d30] md:mt-3 md:px-6 md:py-7 md:text-sm">
             <Link
               className="flex flex-row items-center justify-center gap-1"
-              href={"/menu"}
+              href={"/table-booking"}
             >
-              <ArrowRight /> order now
+              <ArrowRight /> Book now
             </Link>
           </Button>
         </div>

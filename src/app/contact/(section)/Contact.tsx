@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -75,9 +75,6 @@ const Contact = ({}) => {
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col gap-8 bg-[#fff] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <p className="font-bai text-lg leading-[4px] text-[#323232]">
-                Contact Us
-              </p>
               <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#323232] lg:text-5xl">
                 Get in
                 <br /> Touch
@@ -91,13 +88,13 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/AiPzBoU"} target="_blank">
                     <p className="text-[#323232]">
-                      2 Kendal Ave, London W3 0PA,
-                      <br /> United Kingdom
+                      90 Western Rd, Brighton and Hove, <br /> Brighton BN1 2LB,
+                      United Kingdom
                     </p>
                   </Link>
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/AiPzBoU"} target="_blank">
                     <p className="flex items-center gap-2 text-sm text-[#323232]">
                       <span>Get Direction</span>
                       <ArrowRight className="text-[#323232]" />
@@ -122,19 +119,40 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+442035001710" className="text-[#323232]">
-                    +44 20 3500 1710{" "}
+                  <Link href="tel:+441273966680" className="text-[#323232]">
+                    +44 1273 966680
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <div>
+                  <div className="h-fit w-fit rounded-full p-2">
+                    <Mail className="text-[#323232]" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <Link
+                    href="mailto:info@simitpalace.co.uk"
+                    className="text-[#323232]"
+                  >
+                    info@simitpalace.co.uk
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/simitpalacebrighton/"}
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#323232]" />
                 </Link>
-                <Link href={""} target="_blank">
-                  <Icons.unknown className="text-[#323232]" />
+                <Link
+                  href={"https://www.facebook.com/simitpalacebrighton/"}
+                  target="_blank"
+                >
+                  <Icons.facebook className="text-[#323232]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link href={"https://g.co/kgs/AiPzBoU"} target="_blank">
                   <Icons.google className="text-[#323232]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -232,7 +250,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3518235577612!2d-0.282350023528942!3d51.525106571817304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611828d8d4ff7%3A0xd0a626f080e14845!2sNova%20Park%20Royal!5e0!3m2!1sen!2sin!4v1740603246277!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.355677409927!2d-0.15412732357299158!3d50.82457547166597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758512d49f5f93%3A0x3e6f38aa7fa0b2e3!2sSimit%20Palace!5e0!3m2!1sen!2sin!4v1744298656267!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -243,7 +261,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image5.jpeg"
+          src="/images/about-us/image5.jpg"
           alt="bottom"
           width={966}
           height={96}

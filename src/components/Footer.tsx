@@ -19,62 +19,67 @@ const Footer = ({}) => {
 
         <div className="flex flex-col items-center justify-center gap-4 md:mr-[4%] md:flex-row md:items-start md:gap-36 md:pb-20 2xl:gap-56">
           <div className="flex flex-col items-center justify-center gap-4">
-            <h1 className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+            <h1 className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
               Contact
             </h1>
-            <Link className="text-center" href={""} target="_blank">
-              <span className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-                275 High Street
+            <Link
+              className="text-center"
+              href={"https://g.co/kgs/AiPzBoU"}
+              target="_blank"
+            >
+              <span className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+                90 Western Rd, Brighton and Hove, <br /> Brighton BN1 2LB,
+                United Kingdom
               </span>
             </Link>
-            <Link href={""}>
-              <span className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-                +44 1992 610557{" "}
+            <Link href={"tel:+441273966680"}>
+              <span className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+                +44 1273 966680
               </span>
             </Link>
-            <Link href={""}>
-              <span className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-                marlosbrasserie@yahoo.com{" "}
+            <Link href={"mailto:info@simitpalace.co.uk"}>
+              <span className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+                info@simitpalace.co.uk
               </span>
             </Link>
           </div>
           <div className="flex flex-col gap-4">
             <Link
-              className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
+              className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
               href={"/"}
             >
               Home
             </Link>
             <Link
-              className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
+              className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
               href={"/menu"}
             >
               Order Online
             </Link>
             <Link
-              className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
+              className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
               href={"/table-booking"}
             >
               Reservation
             </Link>
             <Link
-              className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
+              className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
               href={"/contact"}
             >
               Contact us
             </Link>
             <Link
-              className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
+              className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base"
               href={"/menu"}
             >
               Menu
             </Link>
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+            <h1 className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
               Opening HOURS
             </h1>
-            <p className="font-poppins text-center text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+            <p className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
               Mon - Sun : 8am-5pm
             </p>
           </div>
@@ -90,14 +95,14 @@ const Footer = ({}) => {
           <div className="flex flex-row items-center justify-center gap-3 md:mr-[8%]">
             <Link
               className="rounded-full px-1 py-1 ring-1 ring-[#76101E]"
-              href={""}
+              href={"https://www.facebook.com/simitpalacebrighton/"}
               target="_blank"
             >
               <Icons.facebook className="h-7 w-7 text-[#76101E]" />
             </Link>
             <Link
               className="rounded-full px-1 py-1 ring-1 ring-[#76101E]"
-              href={""}
+              href={"https://www.instagram.com/simitpalacebrighton/"}
               target="_blank"
             >
               <Icons.instagram className="h-7 w-7 text-[#76101E]" />

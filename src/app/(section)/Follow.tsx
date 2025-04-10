@@ -57,9 +57,9 @@ const Follow: React.FC = () => {
 
         <div className="flex flex-row items-center justify-center gap-4 md:gap-10">
           <Link
-            className="font-poppins rounded-full bg-[#ffff] px-8 py-5 text-center text-sm font-[300] lowercase text-[#000] ring-1 ring-[#FFFFFF] md:px-16 md:py-5 md:text-2xl"
+            className="rounded-full bg-[#ffff] px-8 py-5 text-center font-poppins text-sm font-[300] lowercase text-[#000] ring-1 ring-[#FFFFFF] md:px-16 md:py-5 md:text-2xl"
             style={{ fontVariant: "small-caps" }}
-            href=""
+            href="https://www.instagram.com/simitpalacebrighton/"
             target="_blank"
           >
             @simitpalacebrighton{" "}

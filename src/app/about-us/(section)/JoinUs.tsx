@@ -11,20 +11,23 @@ const JoinUs = ({}) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="z-10 flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
           <h1 className="font-oswald max-w-[500px] text-center text-5xl leading-[60px] text-[#fff]">
             Join Us for an
             <br />
             Unforgettable Meal
           </h1>
-          <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
-            Whether it`s an intimate dinner or a grand celebration, Nova invites
-            you to indulge in an exceptional culinary journey. From expertly
-            crafted flavors to hand-selected ingredients, every dish reflects
-            our passion for excellence. Immerse yourself in a dining experience
-            where innovation meets tradition, and every bite tells a story.
+          <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#fff]">
+            Whether youre planning a quiet evening or a joyous celebration,
+            Simit welcomes you to savor a truly unforgettable dining experience.
+            With flavors thoughtfully curated and ingredients carefully
+            selected, every dish is a reflection of our dedication to
+            excellence. Step into a world where tradition meets innovation—and
+            every moment, and every bite, is crafted to delight.
           </p>
+
           <Link href={"/table-booking"}>
             <Button
               variant="outline"

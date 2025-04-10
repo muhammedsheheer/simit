@@ -5,7 +5,7 @@ const BavetteStory = ({}) => {
     <section className="relative flex h-full w-full items-center justify-center bg-[#fff] p-4 lg:py-16">
       <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#fff]">
         <h2 className="font-oswald text-center text-8xl text-[#323232] md:left-[15%] md:text-8xl">
-          The Nova
+          The Simit
           <br />
           Story
         </h2>
@@ -23,21 +23,22 @@ const BavetteStory = ({}) => {
             <h1 className="font-oswald max-w-[500px] text-center text-6xl text-[#323232] sm:text-7xl md:text-start">
               From Passion
               <br />
-              to Perfection{" "}
+              to Perfection
             </h1>
             <p className="max-w-[450px] text-center font-light leading-[160%] text-[#323232] md:text-start">
-              What began as a vision—to redefine the dining experience—has
-              evolved into Nova, a culinary destination where flavors come to
-              life. Founded with a deep passion for excellence, Nova was born
-              from a desire to craft dishes that are more than just meals—they
-              are experiences. <br /> From our humble beginnings to becoming a
-              haven for food lovers, our commitment to quality, innovation, and
-              hospitality has never wavered. Every ingredient is hand-selected,
-              every dish is prepared with precision, and every bite is a
-              celebration of taste. <br /> At Nova, we don’t just serve food—we
-              create unforgettable moments. As we continue to grow, our mission
-              remains the same: to blend artistry with flavor and offer an
-              extraordinary dining experience like no other.
+              What started as a simple dream—to reimagine the dining journey—has
+              blossomed into Simit, a culinary destination where flavor,
+              creativity, and heart come together. Driven by a deep-rooted love
+              for excellence, Simit was born not just to serve food, but to
+              craft stories on a plate. <br />
+              From humble origins to becoming a haven for food enthusiasts, our
+              dedication to quality, innovation, and heartfelt hospitality has
+              remained unwavering. Every ingredient is carefully chosen, each
+              dish prepared with passion, and every bite is a tribute to flavor.{" "}
+              <br />
+              At Simit, we go beyond serving meals—we create lasting memories.
+              As we grow, our vision stays true: to blend culinary artistry with
+              soul and deliver a dining experience that lingers in your heart.
             </p>
           </div>
         </div>

@@ -247,7 +247,7 @@ export default function Menu() {
           className="relative hidden h-[30vh] w-full bg-black md:flex"
           style={{
             background:
-              "linear-gradient(170deg, rgba(0, 0, 0, 0.00) 7.51%, rgba(0, 0, 0, 0.80) 92.93%), url('/images/menuhero.png') lightgray 50% / cover no-repeat",
+              "linear-gradient(170deg, rgba(0, 0, 0, 0.00) 7.51%, rgba(0, 0, 0, 0.80) 92.93%), url('/images/about-us/image1.jpg') lightgray 50% / cover no-repeat",
           }}
         >
           <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end px-12 py-12">
@@ -260,7 +260,7 @@ export default function Menu() {
           </div>
         </div>
         {/* Categories */}
-        <div className="sticky top-0 z-10 flex items-center bg-menubackground px-4 py-2">
+        <div className="sticky top-0 z-10 flex items-center bg-[#76101E] px-4 py-2">
           <div
             ref={categoryNavRef}
             className="hidden-scrollbar flex overflow-x-auto py-2"
