@@ -238,7 +238,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <section className="bg-menubg mt-8 flex w-full max-w-[1300px] flex-row">
+    <section className="bg-menubg mt-14 flex w-full max-w-[1300px] flex-row">
       {/* {(!restaurant?.isTakeAwayEnabled && restaurant?.isDeliveryEnabled) && (
                 <DeliveryCheck setOrderType={setOrderType} />
             )} */}
