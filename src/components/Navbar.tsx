@@ -44,9 +44,9 @@ const Navbar = ({
             <Link
               href={"/"}
               className={
-                pathname === "/"
-                  ? "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
-                  : "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
+                  : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
               Home
@@ -54,9 +54,9 @@ const Navbar = ({
             <Link
               href={"/menu"}
               className={
-                pathname === "/"
-                  ? "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
-                  : "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
+                  : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
               Order Online
@@ -73,9 +73,9 @@ const Navbar = ({
             <Link
               href={"/table-booking"}
               className={
-                pathname === "/"
-                  ? "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
-                  : "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
+                  : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
               Reservation
@@ -84,9 +84,9 @@ const Navbar = ({
             <Link
               href={"/contact"}
               className={
-                pathname === "/"
-                  ? "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
-                  : "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
+                  : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
               Contact Us
@@ -94,9 +94,9 @@ const Navbar = ({
             <Link
               href={"/about-us"}
               className={
-                pathname === "/"
-                  ? "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
-                  : "font-poppins pt-4 text-center text-xs font-[400] uppercase tracking-[2px] text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#F4F4F4]"
+                  : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
               About
@@ -140,11 +140,14 @@ const Navbar = ({
 export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
+  const pathname = usePathname();
+  const barColor = pathname === "/" ? "#fff" : "#000";
+
   return (
     <div className="equalizer-icon rotate text-[#C0A58A]">
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
+      <div className="bar" style={{ backgroundColor: barColor }}></div>
+      <div className="bar" style={{ backgroundColor: barColor }}></div>
+      <div className="bar" style={{ backgroundColor: barColor }}></div>
     </div>
   );
 };

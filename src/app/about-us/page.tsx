@@ -8,12 +8,12 @@ import Navbar from "@/components/Navbar";
 const page = ({}) => {
   return (
     <main className="relative flex h-full w-full">
-      <div className="flex h-full w-full flex-col items-center justify-center bg-[#fff]">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#000]">
         <Navbar position="absolute" />
         <Hero />
         <BavetteStory />
         <JoinUs />
-        <Review />
+        {/* <Review /> */}
         <Footer />
       </div>
     </main>
@@ -21,6 +21,3 @@ const page = ({}) => {
 };
 
 export default page;
-
-// Images:
-// public/images/about-us
