@@ -504,7 +504,7 @@ export default function Menu() {
                                 )?.name;
                                 if (name) {
                                   if (!acc[name]) {
-                                    acc[name] = { ...modifier, count: 0 };
+                                    acc[name] ??= { ...modifier, count: 0 };
                                   }
                                   acc[name].count += 1;
                                 }
