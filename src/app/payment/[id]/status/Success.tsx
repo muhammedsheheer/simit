@@ -229,12 +229,10 @@ const Success: FC<SuccessProps> = ({ data, id }) => {
                           ) => {
                             const name = mod?.menuItem?.name;
                             if (name) {
-                              if (!acc[name]) {
-                                acc[name] ??= {
-                                  count: 0,
-                                  price: mod?.price?.value,
-                                };
-                              }
+                              acc[name] ??= {
+                                count: 0,
+                                price: mod?.price?.value,
+                              };
                               acc[name].count += 1;
                             }
                             return acc;

@@ -291,15 +291,11 @@ const Checkout = () => {
                             className="aspect-square h-[70px] max-h-[70px] w-auto rounded-md object-cover"
                           />
                         )}
-                        <div className="flex flex-col justify-between py-1">
+                        {/* <div className="flex flex-col justify-between py-1">
                           <p className="line-clamp-1 text-lg font-[600] tracking-[1px] text-menusecondary">
                             {item?.quantity}&nbsp; {item.name}
                           </p>
-                          {/* {item.description && (
-                            <p className="line-clamp-2 text-lg font-normal text-[#FBEAD2]">
-                              {item.description}
-                            </p>
-                          )} */}
+                          
                           {Object.entries(
                             item.modifiers.reduce(
                               (acc, modifier) => {
@@ -320,9 +316,7 @@ const Checkout = () => {
                               >,
                             ),
                           ).map(([name, modifier], index) => {
-                            // const modifier = items.find(
-                            //   (item) => item._id === mod._idMenuItem,
-                            // )?.name;
+                        
                             return (
                               <div key={index}>
                                 <p>
@@ -340,6 +334,52 @@ const Checkout = () => {
                             <br />
                             {item.notes}
                           </p>
+                          <p className="text-lg font-normal text-menusecondary">
+                            {getCurrencySymbol(item.price.currency)}{" "}
+                            {formattedItemPrice(item.price.value)}
+                          </p>
+                        </div> */}
+
+                        <div className="flex flex-col justify-between py-1">
+                          <p className="line-clamp-1 text-lg font-[600] tracking-[1px] text-menusecondary">
+                            {item?.quantity}&nbsp; {item.name}
+                          </p>
+
+                          {Object.entries(
+                            item.modifiers.reduce(
+                              (acc, modifier) => {
+                                const name = items.find(
+                                  (i) => i._id === modifier._idMenuItem,
+                                )?.name;
+                                if (name) {
+                                  acc[name] ??= { ...modifier, count: 0 };
+                                  acc[name].count += 1;
+                                }
+                                return acc;
+                              },
+                              {} as Record<
+                                string,
+                                (typeof item.modifiers)[0] & { count: number }
+                              >,
+                            ),
+                          ).map(([name, modifier], index) => (
+                            <div key={index}>
+                              <p>
+                                {modifier?.count} X {name}
+                              </p>
+                            </div>
+                          ))}
+
+                          <p className="text-sm font-[300] text-menusecondary">
+                            {item.notes && (
+                              <span className="border-b-[1px] border-b-menusecondary font-[500]">
+                                Instructions
+                              </span>
+                            )}
+                            <br />
+                            {item.notes}
+                          </p>
+
                           <p className="text-lg font-normal text-menusecondary">
                             {getCurrencySymbol(item.price.currency)}{" "}
                             {formattedItemPrice(item.price.value)}

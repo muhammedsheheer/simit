@@ -495,7 +495,7 @@ export default function Menu() {
                             : ""}
                         </div>
 
-                        <div className="flex w-full flex-col items-center justify-between gap-2 pl-3">
+                        {/* <div className="flex w-full flex-col items-center justify-between gap-2 pl-3">
                           {Object.entries(
                             item.modifiers.reduce(
                               (acc, modifier) => {
@@ -531,6 +531,42 @@ export default function Menu() {
                               ) : (
                                 ""
                               )}
+                            </div>
+                          ))}
+                        </div> */}
+
+                        <div className="flex w-full flex-col items-center justify-between gap-2 pl-3">
+                          {Object.entries(
+                            item.modifiers.reduce(
+                              (acc, modifier) => {
+                                const name = items.find(
+                                  (i) => i._id === modifier._idMenuItem,
+                                )?.name;
+                                if (name) {
+                                  acc[name] ??= { ...modifier, count: 0 };
+                                  acc[name].count += 1;
+                                }
+                                return acc;
+                              },
+                              {} as Record<
+                                string,
+                                (typeof item.modifiers)[0] & { count: number }
+                              >,
+                            ),
+                          ).map(([name, modifier], index) => (
+                            <div
+                              className="flex w-full items-center justify-between"
+                              key={index}
+                            >
+                              <p className="w-[80%] text-sm font-[300] tracking-[1.4px] text-menusecondary">
+                                {modifier.count}&nbsp;&nbsp;{name}
+                              </p>
+                              {modifier.price.value > 0 ? (
+                                <p className="text-sm font-[700] text-menuprimary">
+                                  {getCurrencySymbol(modifier.price.currency)}{" "}
+                                  {formattedItemPrice(modifier.price.value)}
+                                </p>
+                              ) : null}
                             </div>
                           ))}
                         </div>
