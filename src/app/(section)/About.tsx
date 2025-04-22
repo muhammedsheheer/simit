@@ -1,7 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const About: React.FC = () => {
+  const paragraphRef = useRef(null);
+  const isInView = useInView(paragraphRef, { once: false, amount: 0.3 });
+
   return (
     <section className="h-full w-full bg-[#fff] px-4 py-8 md:px-0 md:py-0">
       <div className="flex flex-col gap-4 md:flex-row md:gap-0">
@@ -14,6 +18,7 @@ const About: React.FC = () => {
             className="h-[300px] w-full object-cover md:h-[700px]"
           />
         </div>
+
         <div className="flex w-full flex-col md:w-[50%]">
           <Image
             src={"/images/home/about/image2.png"}
@@ -22,15 +27,23 @@ const About: React.FC = () => {
             alt="bun"
             className="h-[300px] w-full object-cover md:h-[450px]"
           />
-          <div className="flex h-[250px] w-full items-center justify-center">
-            <p className="font-poppins w-full max-w-[450px] text-center text-sm font-[300] uppercase text-[#373636] md:text-base">
+
+          <motion.div
+            ref={paragraphRef}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="flex h-[250px] w-full items-center justify-center"
+          >
+            <p className="w-full max-w-[450px] text-center font-poppins text-sm font-[300] uppercase text-[#373636] md:text-base">
               Marlo’s strives to serve high quality dishes whilst giving
               exceptional customer service. Our wide menu has been created to
               offer everyone something which they will love. From homemade
               British classics to infused Mediterranean dishes.
             </p>
-          </div>
+          </motion.div>
         </div>
+
         <div className="w-full md:w-[25%]">
           <Image
             src={"/images/home/about/image3.png"}

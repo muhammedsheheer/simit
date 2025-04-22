@@ -1,4 +1,3 @@
-import { Icons } from "@/components/Icon";
 import {
   Carousel,
   CarouselContent,
@@ -6,21 +5,35 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import React from "react";
 import { useRestaurant } from "@/context/RestaurantContext";
+import { motion } from "framer-motion";
 
 const Reviews = () => {
   const { reviews } = useRestaurant();
+  const headingVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeOut" },
+    },
+  };
 
   return (
     <section className="relative flex h-full w-full justify-center bg-[#fff] pb-8 md:px-20 lg:pb-0">
       <div className="flex h-full w-full flex-col items-start justify-center gap-4 py-12 md:py-44 md:pt-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="mt-4 text-center font-open_sans text-2xl font-[700] uppercase tracking-[4px] text-[#76101E] md:mt-20 md:text-4xl md:tracking-[10px]">
+            <motion.h1
+              variants={headingVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="mt-4 text-center font-open_sans text-2xl font-[700] uppercase tracking-[4px] text-[#76101E] md:mt-20 md:text-4xl md:tracking-[10px]"
+            >
               LISTEN TO OUR <br /> CUSTOMERS’ HEARTS
-            </h1>
+            </motion.h1>
           </div>
         </div>
         <div className="flex w-full items-center justify-center p-4">
