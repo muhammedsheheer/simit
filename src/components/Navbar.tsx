@@ -39,7 +39,7 @@ const Navbar = ({
     >
       {/*big screen */}
       <div className="hidden px-4 md:block md:px-32">
-        <div className="flex flex-row items-center justify-end">
+        <div className="flex flex-row items-center justify-center">
           <div className="flex flex-row items-start justify-center gap-28">
             <Link
               href={"/"}
@@ -59,7 +59,7 @@ const Navbar = ({
                   : "pt-4 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#000]"
               }
             >
-              Order Online
+              Menu
             </Link>
             <Link href={"/"}>
               <Image
@@ -70,7 +70,7 @@ const Navbar = ({
                 className="w-24"
               />
             </Link>
-            <Link
+            {/* <Link
               href={"/table-booking"}
               className={
                 pathname === "/" || pathname === "/table-booking"
@@ -79,7 +79,7 @@ const Navbar = ({
               }
             >
               Reservation
-            </Link>
+            </Link> */}
 
             <Link
               href={"/contact"}

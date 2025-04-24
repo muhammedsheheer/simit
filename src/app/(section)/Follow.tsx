@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 const images = [
   "/images/home/follow/image.png",
@@ -32,7 +33,13 @@ const Follow: React.FC = () => {
 
   return (
     <section className="w-full bg-[#76101E] py-12 md:py-14">
-      <div className="flex flex-col gap-8 md:gap-10">
+      <motion.div
+        className="flex flex-col gap-8 md:gap-10"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
         <div className="relative w-full overflow-hidden px-4">
           <div
             ref={containerRef}
@@ -65,7 +72,7 @@ const Follow: React.FC = () => {
             @simitpalacebrighton{" "}
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       <style jsx>{`
         .custom-scrollbar::-webkit-scrollbar {

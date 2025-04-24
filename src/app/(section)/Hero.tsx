@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   const headingRef = useRef(null);
@@ -35,6 +38,21 @@ const Hero: React.FC = () => {
           <span className="text-[#76101E]">pa</span>lac
           <span className="text-[#76101E]">e</span>
         </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          className="pt-4 md:pt-6"
+        >
+          <Button className="rounded-none bg-[#76101E] px-4 py-6 text-center font-poppins text-xs font-[400] uppercase tracking-[2px] text-[#fff] hover:bg-[#af1d30] md:px-6 md:py-7 md:text-sm">
+            <Link
+              className="flex flex-row items-center justify-center gap-1"
+              href={"/menu"}
+            >
+              <ArrowRight /> order now
+            </Link>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
