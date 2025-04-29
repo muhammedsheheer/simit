@@ -169,7 +169,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
       <div className="flex w-full justify-center">
         <Button
           type="submit"
-          className="w-fit bg-[#000] px-6 py-6 text-[#fff] hover:bg-[#323232] md:float-right md:w-fit"
+          className="w-fit bg-[#76101E] px-6 py-6 text-[#fff] hover:bg-[#af1d30] md:float-right md:w-fit"
           disabled={bookTableMutation.isPending}
         >
           {bookTableMutation.isPending ? "Booking..." : "Book A Table"}

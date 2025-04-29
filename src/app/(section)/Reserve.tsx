@@ -45,7 +45,7 @@ const Reserve: React.FC = () => {
           variants={imageVariant}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="relative h-[400px] w-full rounded-t-full border border-[#fff] bg-[#fff] md:h-[600px] md:w-1/2"
+          className="relative h-[400px] w-full rounded-t-full border border-[#fff] bg-[#fff] md:h-[800px] md:w-1/2"
         >
           <div className="absolute inset-0 flex items-center justify-center px-8 pt-8 md:px-16 md:pt-16">
             <Image
@@ -62,7 +62,7 @@ const Reserve: React.FC = () => {
           variants={textVariant}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="flex h-[400px] w-full flex-col items-center justify-center gap-6 rounded-t-full border border-[#fff] bg-[#fff] md:h-[600px] md:w-1/2 md:gap-7"
+          className="flex h-[400px] w-full flex-col items-center justify-center gap-6 rounded-t-full border border-[#fff] bg-[#fff] md:h-[800px] md:w-1/2 md:gap-7"
         >
           <motion.h1
             variants={textVariant}

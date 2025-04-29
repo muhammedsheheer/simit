@@ -4,7 +4,7 @@ const BavetteStory = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#fff] p-4 lg:py-16">
       <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#fff]">
-        <h2 className="font-oswald text-center text-8xl text-[#323232] md:left-[15%] md:text-8xl">
+        <h2 className="font-oswald text-center text-5xl text-[#323232] md:left-[15%] md:text-8xl">
           The Simit
           <br />
           Story
@@ -20,7 +20,7 @@ const BavetteStory = ({}) => {
             />
           </div>
           <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
-            <h1 className="font-oswald max-w-[500px] text-center text-6xl text-[#323232] sm:text-7xl md:text-start">
+            <h1 className="font-oswald max-w-[500px] text-center text-5xl text-[#323232] md:text-start md:text-7xl">
               From Passion
               <br />
               to Perfection

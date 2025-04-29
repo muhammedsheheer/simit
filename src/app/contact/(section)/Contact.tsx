@@ -238,7 +238,7 @@ const Contact = ({}) => {
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#323232] py-6 text-white hover:bg-black hover:text-[#fff]"
+                      className="font-bai w-full rounded-2xl bg-[#76101E] py-6 text-white hover:bg-[#af1d30] hover:text-[#fff]"
                       disabled={bookTableMutation.isPending}
                     >
                       Contact US

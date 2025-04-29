@@ -42,13 +42,18 @@ const Products: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="h-full w-full bg-[#F5DFD8] py-12 md:py-20"
+      className="relative h-full w-full bg-[#F5DFD8] py-12 md:py-20"
     >
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <motion.div
         variants={textVariant}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="flex flex-col items-center justify-center gap-4 md:gap-12"
+        className="z-50 flex flex-col items-center justify-center gap-4 md:gap-12"
       >
         <motion.div
           variants={textVariant}
@@ -78,7 +83,7 @@ const Products: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col gap-4 px-2 md:flex-row md:gap-6 md:px-[150px]"
+          className="z-50 flex flex-col gap-4 px-2 md:flex-row md:gap-6 md:px-[150px]"
           variants={textVariant}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -98,21 +103,21 @@ const Products: React.FC = () => {
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               transition={{ duration: 0.8, delay: idx * 0.3 }}
-              className="flex flex-col items-center justify-center gap-4"
+              className="z-50 flex flex-col items-center justify-center gap-4"
             >
               <Image
                 src={`/images/home/products/${item.src}.png`}
                 width={281}
                 height={74}
                 alt={item.label}
-                className="h-[300px] w-full md:h-[350px]"
+                className="z-50 h-[300px] w-full md:h-[350px]"
               />
               <motion.span
                 variants={textVariant}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 transition={{ duration: 0.8, delay: idx * 0.4 }}
-                className="text-center font-open_sans text-sm font-[400] uppercase tracking-[6px] text-[#323232] underline-offset-4 hover:underline hover:decoration-[#C0A58A] md:text-base"
+                className="z-50 text-center font-open_sans text-sm font-[400] uppercase tracking-[6px] text-[#323232] underline-offset-4 hover:underline hover:decoration-[#C0A58A] md:text-base"
               >
                 {item.label}
               </motion.span>

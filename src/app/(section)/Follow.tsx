@@ -32,7 +32,12 @@ const Follow: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-[#76101E] py-12 md:py-14">
+    <section className="relative w-full bg-[#76101E] py-12 md:py-14">
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <motion.div
         className="flex flex-col gap-8 md:gap-10"
         initial={{ opacity: 0, y: 50 }}
