@@ -38,9 +38,9 @@ const Simit: React.FC = () => {
         </motion.h1>
 
         <p className="w-full max-w-[450px] text-center font-poppins text-sm font-[300] text-[#4E4E4E] md:text-base">
-          Marlo’s is located in the heart of leafy Cockfosters, North London. A
-          brasserie offering relaxed all day dining in comfort, ambiance and
-          sophisticated style.
+          Simit is nestled in the heart of leafy Cockfosters, North London — a
+          brasserie where relaxed, all-day dining meets comfort, warm ambiance,
+          and effortless sophistication.
         </p>
 
         <motion.div

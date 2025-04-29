@@ -79,10 +79,10 @@ const Reserve: React.FC = () => {
             animate={isInView ? "visible" : "hidden"}
             className="w-full max-w-[450px] px-2 text-center font-poppins text-sm font-[300] uppercase text-[#373636] md:text-base"
           >
-            Marlo’s strives to serve high quality dishes whilst giving
-            exceptional customer service. Our wide menu has been created to
-            offer everyone something which they will love. From homemade British
-            classics to infused Mediterranean dishes.
+            Simit is dedicated to delivering high-quality dishes with
+            outstanding customer service. Our extensive menu is designed to
+            delight every palate — from comforting homemade British favorites to
+            vibrant, Mediterranean-infused specialties.
           </motion.p>
 
           <motion.div

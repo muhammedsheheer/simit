@@ -4,14 +4,13 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
-  "/images/home/follow/image.png",
+  "/images/home/follow/image1.jpg",
+  "/images/home/follow/image2.jpg",
+  "/images/home/follow/image3.jpg",
+  "/images/home/follow/image4.jpg",
+  "/images/home/follow/image5.jpg",
+  "/images/home/follow/image6.jpg",
+  "/images/home/follow/image7.jpg",
 ];
 
 const Follow: React.FC = () => {
@@ -53,14 +52,14 @@ const Follow: React.FC = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="w-[90%] flex-shrink-0 sm:w-[100%] md:w-[33%]"
+                className="w-[100%] flex-shrink-0 rounded-2xl border border-white bg-white p-8 md:w-[33%] md:rounded-3xl md:p-14"
               >
                 <Image
                   src={image}
                   width={600}
                   height={800}
                   alt={`Story image ${index}`}
-                  className="h-auto w-full rounded-md object-cover"
+                  className="h-[300px] w-full rounded-2xl object-cover md:h-[500px]"
                 />
               </div>
             ))}
@@ -69,7 +68,7 @@ const Follow: React.FC = () => {
 
         <div className="flex flex-row items-center justify-center gap-4 md:gap-10">
           <Link
-            className="rounded-full bg-[#ffff] px-8 py-5 text-center font-poppins text-sm font-[300] lowercase text-[#000] ring-1 ring-[#FFFFFF] md:px-16 md:py-5 md:text-2xl"
+            className="z-50 rounded-full bg-[#ffff] px-8 py-5 text-center font-poppins text-sm font-[300] lowercase text-[#000] ring-1 ring-[#FFFFFF] md:px-16 md:py-5 md:text-2xl"
             style={{ fontVariant: "small-caps" }}
             href="https://www.instagram.com/simitpalacebrighton/"
             target="_blank"

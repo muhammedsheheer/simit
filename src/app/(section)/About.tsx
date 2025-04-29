@@ -36,10 +36,11 @@ const About: React.FC = () => {
             className="flex h-[250px] w-full items-center justify-center"
           >
             <p className="w-full max-w-[450px] text-center font-poppins text-sm font-[300] uppercase text-[#373636] md:text-base">
-              Marlo’s strives to serve high quality dishes whilst giving
-              exceptional customer service. Our wide menu has been created to
-              offer everyone something which they will love. From homemade
-              British classics to infused Mediterranean dishes.
+              At Simit, we’re passionate about serving high-quality dishes
+              complemented by exceptional customer service. Our diverse menu is
+              thoughtfully crafted to offer something everyone will love — from
+              comforting homemade British classics to flavorful
+              Mediterranean-inspired creations.
             </p>
           </motion.div>
         </div>
