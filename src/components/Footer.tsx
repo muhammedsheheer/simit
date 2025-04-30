@@ -185,6 +185,13 @@ const Footer = ({}) => {
             </Link>
             <Link
               className="rounded-full px-1 py-1 ring-1 ring-[#76101E]"
+              href={"https://g.co/kgs/7rH5PRT"}
+              target="_blank"
+            >
+              <Icons.google className="h-7 w-7 text-[#76101E]" />
+            </Link>
+            <Link
+              className="rounded-full px-1 py-1 ring-1 ring-[#76101E]"
               href={"https://www.instagram.com/simitpalacebrighton/"}
               target="_blank"
             >

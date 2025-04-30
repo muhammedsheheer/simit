@@ -90,10 +90,10 @@ const Products: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {[
-            { src: "image1", label: "Brioche", position: "top" },
-            { src: "image2", label: "Bagels", position: "bottom" },
-            { src: "image3", label: "Baklava", position: "top" },
-            { src: "image4", label: "Cakes", position: "bottom" },
+            { src: "1", label: "Brioche", position: "top" },
+            { src: "2", label: "Bagels", position: "bottom" },
+            { src: "3", label: "Baklava", position: "top" },
+            { src: "4", label: "Cakes", position: "bottom" },
           ].map((item, idx) => (
             <motion.div
               key={item.label}
@@ -106,11 +106,11 @@ const Products: React.FC = () => {
               className="z-50 flex flex-col items-center justify-center gap-4"
             >
               <Image
-                src={`/images/home/products/${item.src}.png`}
+                src={`/images/home/products/${item.src}.jpg`}
                 width={281}
                 height={74}
                 alt={item.label}
-                className="z-50 h-[300px] w-full md:h-[350px]"
+                className="z-50 h-[300px] w-full rounded-t-full rounded-br-full md:h-[350px]"
               />
               <motion.span
                 variants={textVariant}

@@ -14,9 +14,9 @@ const Simit: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-full w-full bg-[#fff] px-2 pb-12 pt-64 md:pb-16 md:pt-56"
+      className="relative h-full w-full bg-[#F5DFD8] px-2 pb-12 pt-64 md:pb-16 md:pt-56"
     >
-      <div className="absolute left-2 right-2 top-6 z-40 md:left-1/2 md:top-16 md:ml-[6%] md:-translate-x-1/2">
+      <div className="absolute left-2 right-2 top-6 z-40 md:left-1/2 md:top-16 md:ml-[8%] md:-translate-x-1/2">
         <Image
           src={"/images/home/hero/bun.png"}
           width={281}
