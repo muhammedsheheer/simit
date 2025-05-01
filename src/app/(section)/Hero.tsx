@@ -34,9 +34,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-center font-open_sans text-6xl font-[800] lowercase text-[#fff] md:text-[150px] md:leading-[120px]"
         >
-          <span className="text-[#76101E]">s</span>IMIT. <br />
-          <span className="text-[#76101E]">pa</span>lac
-          <span className="text-[#76101E]">e</span>
+          sIMIT
+          <br />
+          palace
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, x: -50 }}

@@ -90,9 +90,9 @@ const Products: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {[
-            { src: "1", label: "Brioche", position: "top" },
-            { src: "2", label: "Bagels", position: "bottom" },
-            { src: "3", label: "Baklava", position: "top" },
+            { src: "1", label: "Borek", position: "top" },
+            { src: "2", label: "simit", position: "bottom" },
+            { src: "3", label: "Pistachio baklava", position: "top" },
             { src: "4", label: "Cakes", position: "bottom" },
           ].map((item, idx) => (
             <motion.div
