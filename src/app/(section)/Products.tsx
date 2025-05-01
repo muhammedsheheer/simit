@@ -110,7 +110,7 @@ const Products: React.FC = () => {
                 width={281}
                 height={74}
                 alt={item.label}
-                className="z-50 h-[300px] w-full rounded-t-full rounded-br-full md:h-[350px]"
+                className="z-50 h-[300px] w-full rounded-t-full rounded-br-full object-cover md:h-[350px]"
               />
               <motion.span
                 variants={textVariant}
