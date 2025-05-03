@@ -33,8 +33,8 @@ const Simit: React.FC = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center font-open_sans text-6xl font-[800] lowercase text-[#fff] md:text-[180px] md:leading-[120px]"
         >
-          <span className="text-[#76101E]">s</span>IMI
-          <span className="text-[#76101E]">t.</span>
+          <span>s</span>IMI
+          <span>t</span>
         </motion.h1>
 
         <p className="w-full max-w-[450px] text-center font-poppins text-sm font-[300] text-[#4E4E4E] md:text-base">
