@@ -90,8 +90,7 @@ const Contact = ({}) => {
                 <div className="flex flex-col gap-4">
                   <Link href={"https://g.co/kgs/AiPzBoU"} target="_blank">
                     <p className="text-[#323232]">
-                      90 Western Rd, Brighton and Hove, <br /> Brighton BN1 2LB,
-                      United Kingdom
+                      90 Western Rd, Brighton <br /> BN1 2LB, United Kingdom
                     </p>
                   </Link>
                   <Link href={"https://g.co/kgs/AiPzBoU"} target="_blank">

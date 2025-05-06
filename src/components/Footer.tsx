@@ -29,8 +29,7 @@ const Footer = ({}) => {
               target="_blank"
             >
               <span className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-                90 Western Rd, Brighton and Hove, <br /> Brighton BN1 2LB,
-                United Kingdom
+                90 Western Rd, Brighton <br /> BN1 2LB, United Kingdom
               </span>
             </Link>
             <Link href={"tel:+441273966680"}>
@@ -39,7 +38,7 @@ const Footer = ({}) => {
               </span>
             </Link>
             <Link href={"mailto:info@simitpalace.co.uk"}>
-              <span className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+              <span className="text-center font-poppins text-sm font-[400] lowercase tracking-[2px] text-[#76101E] md:text-base">
                 info@simitpalace.co.uk
               </span>
             </Link>
@@ -81,7 +80,7 @@ const Footer = ({}) => {
               Opening HOURS
             </h1>
             <p className="text-center font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-              Mon - Sun : 8am-5pm
+              Mon - Sun : 9am-7pm
             </p>
           </div>
         </div>
@@ -111,8 +110,7 @@ const Footer = ({}) => {
               target="_blank"
             >
               <span className="text-start font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-                90 Western Rd, Brighton and Hove, <br /> Brighton BN1 2LB,
-                United Kingdom
+                90 Western Rd, Brighton BN1 <br /> 2LB, United Kingdom
               </span>
             </Link>
             <Link href={"tel:+441273966680"}>
@@ -121,7 +119,7 @@ const Footer = ({}) => {
               </span>
             </Link>
             <Link href={"mailto:info@simitpalace.co.uk"}>
-              <span className="text-start font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
+              <span className="text-start font-poppins text-sm font-[400] lowercase tracking-[2px] text-[#76101E] md:text-base">
                 info@simitpalace.co.uk
               </span>
             </Link>
@@ -163,7 +161,7 @@ const Footer = ({}) => {
               Opening HOURS
             </h1>
             <p className="text-end font-poppins text-sm font-[400] uppercase tracking-[2px] text-[#76101E] md:text-base">
-              Mon - Sun : 8am-5pm
+              Mon - Sun : 9am-7pm
             </p>
           </div>
         </div>
