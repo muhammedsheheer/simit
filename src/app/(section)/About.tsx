@@ -11,9 +11,9 @@ const About: React.FC = () => {
       <div className="flex flex-col gap-4 md:flex-row md:gap-0">
         <div className="w-full md:w-[25%]">
           <Image
-            src={"/images/home/about/1.jpg"}
-            width={281}
-            height={74}
+            src={"/images/home/about/1a.jpg"}
+            width={6000}
+            height={4000}
             alt="bun"
             className="h-[300px] w-full object-cover md:h-[700px]"
           />
@@ -21,9 +21,9 @@ const About: React.FC = () => {
 
         <div className="flex w-full flex-col md:w-[50%]">
           <Image
-            src={"/images/home/about/2.jpg"}
-            width={281}
-            height={74}
+            src={"/images/home/about/2a.jpg"}
+            width={6000}
+            height={4000}
             alt="bun"
             className="h-[300px] w-full object-cover md:h-[450px]"
           />
@@ -47,9 +47,9 @@ const About: React.FC = () => {
 
         <div className="w-full md:w-[25%]">
           <Image
-            src={"/images/home/about/3.jpg"}
-            width={281}
-            height={74}
+            src={"/images/home/about/5.jpg"}
+            width={6000}
+            height={4000}
             alt="bun"
             className="h-[300px] w-full object-cover md:h-[700px]"
           />
